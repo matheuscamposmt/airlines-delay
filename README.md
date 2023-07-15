@@ -1,5 +1,5 @@
-# Sleep Disorders
-![4321660](https://github.com/matheuscamposmt/sleep-disorders/assets/69912320/73dc279f-d1d2-4f35-87b5-7418e7b4a894)
+# Airlines Delay Prediction
+![dataset-cover](https://github.com/matheuscamposmt/airlines-delay/assets/69912320/4e15ab29-7d56-4faa-b0a2-366f21e6653b)
 
 ## Solution Strategy
 **Step 01. Data Description**: In this first section the data will be collected and studied. The missing values will be treated or removed. Finally, a initial data description will carried out to know the data. Therefore some calculations of descriptive statistics will be made, such as kurtosis, skewness, media, fashion, median and standard deviation.
