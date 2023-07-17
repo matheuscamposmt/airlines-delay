@@ -2,17 +2,18 @@
 ![dataset-cover](https://github.com/matheuscamposmt/airlines-delay/assets/69912320/4e15ab29-7d56-4faa-b0a2-366f21e6653b)
 
 ## Solution Strategy
-**Step 01. Data Description**: In this first section the data will be collected and studied. The missing values will be treated or removed. Finally, a initial data description will carried out to know the data. Therefore some calculations of descriptive statistics will be made, such as kurtosis, skewness, media, fashion, median and standard deviation.
+**Step 01. Data Collection and Understanding**: In this first step, the data is collected and studied. Missing values are treated or removed, and initial data exploration is performed. Descriptive statistics such as kurtosis, skewness, mean, mode, median, and standard deviation are calculated.
 
-**Step 02. Data Filtering**: Data filtering removes columns or rows that are not part of the business. For example, columns with customer ID, hash code or rows with age that does not consist of human age.
+**Step 02. Data Filtering**: Data filtering removes irrelevant columns or rows that are not relevant to the analysis. For example, columns with customer ID or hash code, or rows with invalid or inconsistent data.
 
-**Step 03. Exploratory Data Analysis**: The exploratory data analysis section consists of univariate analysis, bivariate analysis, and multivariate analysis to assist in understanding of the database. The hypothesis created in step 02 will be tested in the bivariate analysis.
+**Step 03. Exploratory Data Analysis (EDA)**: The EDA phase involves univariate, bivariate, and multivariate analysis to gain insights into the dataset. Hypotheses generated in the previous step are tested through statistical analysis and data visualization.
 
-**Step 04. Data Preparation**: In this fifth section, the data will be prepared for machine learning modeling. Therefore, they will be transformed to improve the learning of the machine learning model, thus they can be encoded, oversampled, subsampled, or rescaled.
+**Step 04. Data Preprocessing**: In this step, the data is prepared for machine learning modeling. This involves techniques such as data encoding, feature scaling, handling missing values, and handling outliers. The data may also be transformed or normalized to improve the performance of machine learning models.
 
-**Step 05. Feature Selection**: After the data preparation in this section algorithms, like Boruta, will select the best columns to be used for the training of the machine learning model. This reduces the dimensionality of the database and decreases the chances of overfitting.
+**Step 05. Feature Selection**: Feature selection techniques are applied to identify the most relevant features that contribute to the predictive task. This helps reduce dimensionality and minimize the risk of overfitting. Techniques such as Boruta or feature importance from machine learning models can be used.
 
-**Step 06. Machine Learning Modeling**: Step 07 aims to train the machine learning algorithms and how they can predict the data. For validation, the model is trained, validated, and applied to cross-validation to know the learning capacity of the model.
+**Step 06. Machine Learning Modeling**: In this step, various machine learning algorithms are trained and evaluated on the dataset. The selected algorithms are applied to the data, and their performance is assessed using appropriate evaluation metrics. Cross-validation techniques may be used to estimate model performance.
 
-**Step 07. Hyparameter Fine Tuning**: First, select the best model to be applied in the project, it's important to make a fine-tuning of the parameters to improve the performance. The same model performance methods applied in step 07 are used.
-**Step 08. Conclusions**: This is a conclusion stage in which the generation capacity model is tested using unseen data. In addition, some business questions are answered to show the applicability of the model in the business context.
+**Step 07. Hyperparameter Tuning**: Once the best model(s) have been selected, the hyperparameters of the model are fine-tuned to optimize its performance. Techniques such as grid search or randomized search are used to explore different combinations of hyperparameters and identify the optimal settings.
+
+**Step 08. Model Evaluation and Conclusion**: The final model is evaluated using unseen data or a holdout dataset to assess its generalization performance. The model's predictions are compared with the actual outcomes, and various performance metrics are calculated. The results are interpreted in the context of the business problem, and conclusions are drawn regarding the applicability and usefulness of the model.
