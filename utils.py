@@ -95,7 +95,6 @@ def distribution_plot(data, include_columns=None, exclude_columns=None, title='D
     num_subplot_rows = (len(num_features) + 2) // 3
     cat_subplot_rows = (len(cat_features) + 2) // 3
 
-    sns.set_palette("icefire")
     fig, axes = plt.subplots(nrows=num_subplot_rows + cat_subplot_rows, ncols=3, figsize=(20, 5 * (num_subplot_rows + cat_subplot_rows)))
     axes = axes.flatten()
     for i, column in enumerate(num_features):
@@ -124,8 +123,7 @@ def distribution_plot(data, include_columns=None, exclude_columns=None, title='D
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-def plot_norm_countplot(data, category_col, hue_col=None, horizontal=False, title=None, xticks_rotation=45):
-    plt.style.use('ggplot')
+def plot_norm_countplot(data, category_col, hue_col=None, horizontal=False, title=None, xticks_rotation=45, **kwargs):
 
     # Calculate the count and percentage for each category and hue
     if hue_col is None:
@@ -141,10 +139,10 @@ def plot_norm_countplot(data, category_col, hue_col=None, horizontal=False, titl
 
     # Create the countplot
     if horizontal:
-        ax = sns.barplot(x='percentage', y=category_col, hue=hue_col, data=counts, orient='h')
+        ax = sns.barplot(x='percentage', y=category_col, hue=hue_col, data=counts, orient='h', **kwargs)
         ax.set_xlim((0,100))
     else:
-        ax = sns.barplot(x=category_col, y='percentage', hue=hue_col, data=counts)
+        ax = sns.barplot(x=category_col, y='percentage', hue=hue_col, data=counts, **kwargs)
         ax.set_ylim((0,100))
 
     # Rotate the x-axis labels if needed
