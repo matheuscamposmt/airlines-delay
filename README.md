@@ -17,3 +17,13 @@
 **Step 07. Hyperparameter Tuning**: Once the best model(s) have been selected, the hyperparameters of the model are fine-tuned to optimize its performance. Techniques such as grid search or randomized search are used to explore different combinations of hyperparameters and identify the optimal settings.
 
 **Step 08. Model Evaluation and Conclusion**: The final model is evaluated using unseen data or a holdout dataset to assess its generalization performance. The model's predictions are compared with the actual outcomes, and various performance metrics are calculated. The results are interpreted in the context of the business problem, and conclusions are drawn regarding the applicability and usefulness of the model.
+
+
+## Results:
+DecisionTreeClassifier optimized
+| Metric    | Score  |
+|-----------|--------|
+| F1-Score  | 0.6342 |
+| Precision | 0.6436 |
+| Recall    | 0.6343 |
+| Accuracy  | 0.6480 |
