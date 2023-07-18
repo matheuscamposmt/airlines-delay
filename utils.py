@@ -162,14 +162,10 @@ def plot_norm_countplot(data, category_col, hue_col=None, horizontal=False, titl
         
 
 
-    # Set the y-axis label
-    ax.set_ylabel('Percentage')
     # Set the title of the plot
     if title:
         ax.set_title(title)
     else:
         ax.set_title(f"Normalized Countplot by {category_col if category_col else ''} colored by {hue_col if hue_col else ''}")
-    # Display the plot
-    plt.show()
 
 
