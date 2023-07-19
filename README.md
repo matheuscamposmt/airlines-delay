@@ -1,6 +1,10 @@
 # Airlines Delay Prediction
 ![dataset-cover](https://github.com/matheuscamposmt/airlines-delay/assets/69912320/4e15ab29-7d56-4faa-b0a2-366f21e6653b)
 
+
+The original dataset:
+https://www.kaggle.com/datasets/ulrikthygepedersen/airlines-delay
+
 ## Solution Strategy
 **Step 01. Data Collection and Understanding**: In this first step, the data is collected and studied. Missing values are treated or removed, and initial data exploration is performed. Descriptive statistics such as kurtosis, skewness, mean, mode, median, and standard deviation are calculated.
 
